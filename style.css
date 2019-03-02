@@ -77,3 +77,12 @@ figcaption {
   text-align: left;
   border-left: 2px solid var(--yellow);
 }
+
+@media (max-width: 768px) {
+  .post {
+    grid-template-columns: 1fr;
+  }
+  .post > * {
+    grid-column: 1 / -1;
+  }
+}
